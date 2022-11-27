@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-// require('@tinypixelco/laravel-mix-wp-blocks');
 require('laravel-mix-purgecss');
 require('laravel-mix-copy-watched');
 
@@ -14,104 +13,7 @@ require('laravel-mix-copy-watched');
 // |
 //
 
-// mix.setPublicPath('./dist').browserSync('sage.test');
 mix.setPublicPath('./dist');
-
-// const purgeCssWhitelist = require('purgecss-with-wordpress').whitelist;
-
-// const purgeCssWhitelistPatterns =
-//     require('purgecss-with-wordpress').whitelistPatterns;
-
-// const purgeCssWhitelistChildrenPatterns = [];
-
-// purgeCssWhitelist.push('hr');
-
-// purgeCssWhitelistPatterns.push(
-//     // Custom Forms
-//     /^contact-form(.*)?$/,
-//     /^project-scope-form(.*)?$/,
-//     // Nav
-//     /^nav-item(.*)?$/,
-//     /^nav-link(.*)?$/,
-//     // Tables
-//     /^table?$/,
-//     /^table-responsive?$/,
-//     /^table-bordered?$/,
-//     // Transitions
-//     /^fade?$/,
-//     /^collapse?$/,
-//     /^collapsing?$/,
-//     // Alerts
-//     /^alert$/,
-//     /^alert-warning?$/,
-//     // Modal
-//     // /^modal-backdrop(.*)?$/,
-//     // /^modal-open(.*)?$/,
-//     // Gravity Forms
-//     /^gf_progressbar(.*)?$/,
-//     /^gfield(.*)?$/,
-//     /^gform(.*)?$/,
-//     /^ginput(.*)?$/,
-//     /^percentbar(.*)?$/,
-//     /^hidden_label(.*)?$/,
-//     /^validation_error(.*)?$/,
-//     /^validation_message(.*)?$/,
-//     /^radio-button-icons(.*)?$/,
-//     /^radio-button-number-scale(.*)?$/,
-//     /^[name='gform_resume_email'](.*)?$/,
-//     /^[name='gform_send_resume_link_button'](.*)?$/,
-//     // Feature Detection
-//     /^(.*)data-scroll(.*)?$/,
-//     /^(.*)data-stickyheader(.*)?$/,
-//     /^js(.*)?$/,
-//     /^no-js(.*)?$/,
-//     /^no-webp(.*)?$/
-// );
-
-// purgeCssWhitelistChildrenPatterns.push(
-//     // Custom Forms
-//     /^contact-form(.*)?$/,
-//     /^project-scope-form(.*)?$/,
-//     // Nav
-//     /^nav-item(.*)?$/,
-//     /^nav-link(.*)?$/,
-//     // Tables
-//     /^table?$/,
-//     /^table-responsive?$/,
-//     /^table-bordered?$/,
-//     // Transitions
-//     /^fade?$/,
-//     /^collapse?$/,
-//     /^collapsing?$/,
-//     // Alerts
-//     /^alert$/,
-//     /^alert-warning?$/,
-//     // Modal
-//     // /^modal-backdrop(.*)?$/,
-//     // /^modal-open(.*)?$/,
-//     // Gravity Forms
-//     /^gf_progressbar(.*)?$/,
-//     /^gfield(.*)?$/,
-//     /^gform(.*)?$/,
-//     /^ginput(.*)?$/,
-//     /^percentbar(.*)?$/,
-//     /^hidden_label(.*)?$/,
-//     /^validation_error(.*)?$/,
-//     /^validation_message(.*)?$/,
-//     /^radio-button-icons(.*)?$/,
-//     /^radio-button-number-scale(.*)?$/,
-//     /^[name='gform_resume_email'](.*)?$/,
-//     /^[name='gform_send_resume_link_button'](.*)?$/,
-//     // Feature Detection
-//     /^(.*)data-scroll(.*)?$/,
-//     /^(.*)data-stickyheader(.*)?$/,
-//     /^js(.*)?$/,
-//     /^no-js(.*)?$/,
-//     /^no-webp(.*)?$/
-// );
-
-// console.log(purgeCssWhitelist);
-// console.log(purgeCssWhitelistPatterns);
 
 const purgeCssSafelist = require('purgecss-with-wordpress').safelist;
 
@@ -166,8 +68,6 @@ purgeCssSafelist.push(
     /^no-webp(.*)?$/
 );
 
-// console.log(purgeCssSafelist);
-
 mix.sass('assets/styles/app.scss', 'styles', {
     sassOptions: {
         quietDeps: true,
@@ -196,9 +96,6 @@ mix.sass('assets/styles/app.scss', 'styles', {
                 `${__dirname}/**/index.html`, // eslint-disable-line no-undef
             ],
         },
-        // whitelist: purgeCssWhitelist,
-        // whitelistPatterns: purgeCssWhitelistPatterns,
-        // whitelistPatternsChildren: purgeCssWhitelistChildrenPatterns,
         safelist: purgeCssSafelist,
     });
 
