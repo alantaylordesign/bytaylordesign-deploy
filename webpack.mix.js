@@ -194,8 +194,6 @@ mix.sass('assets/styles/app.scss', 'styles', {
             content: [
                 `${__dirname}/index.html`, // eslint-disable-line no-undef
                 `${__dirname}/**/index.html`, // eslint-disable-line no-undef
-                `${__dirname}/*.php`, // eslint-disable-line no-undef
-                `${__dirname}/templates/**/*.php`, // eslint-disable-line no-undef
             ],
         },
         // whitelist: purgeCssWhitelist,
@@ -206,9 +204,6 @@ mix.sass('assets/styles/app.scss', 'styles', {
 
 mix.js('assets/scripts/app.js', 'scripts')
     .js('assets/scripts/fa.js', 'scripts')
-    .js('assets/scripts/header-inline.js', 'scripts')
-    .js('assets/scripts/customize-preview.js', 'scripts')
-    // .blocks('assets/scripts/editor.js', 'scripts')
     .extract();
 
 mix.copyWatched('assets/images/**', 'dist/images').copyWatched(
@@ -221,12 +216,6 @@ mix.copy(
     'dist/webfonts'
 );
 
-mix.copy('node_modules/jquery/dist/jquery.js', 'dist/scripts/jquery.js').copy(
-    'node_modules/jquery/dist/jquery.min.js',
-    'dist/scripts/jquery.min.js'
-);
-
-mix.autoload({ jquery: ['$', 'window.jQuery'] })
-    .options({ processCssUrls: false })
+mix.options({ processCssUrls: false })
     .sourceMaps(false, 'source-map')
     .version();
