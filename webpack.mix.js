@@ -192,6 +192,8 @@ mix.sass('assets/styles/app.scss', 'styles', {
         enabled: true,
         extend: {
             content: [
+                `${__dirname}/index.html`, // eslint-disable-line no-undef
+                `${__dirname}/**/index.html`, // eslint-disable-line no-undef
                 `${__dirname}/*.php`, // eslint-disable-line no-undef
                 `${__dirname}/templates/**/*.php`, // eslint-disable-line no-undef
             ],
