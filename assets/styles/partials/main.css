@@ -1,0 +1,23 @@
+/**
+ * Main
+ */
+
+/* Main */
+/* -------------------------------------------------------------------------- */
+.main,
+.site-main {
+}
+
+.main__content,
+.site-main__content {
+    padding-bottom: var(--grid-gutter-width);
+    padding-top: var(--grid-gutter-width);
+}
+
+@media (min-width: 768px) {
+    .main__content,
+    .site-main__content {
+        padding-bottom: var(--grid-gutter-width-double);
+        padding-top: var(--grid-gutter-width-double);
+    }
+}

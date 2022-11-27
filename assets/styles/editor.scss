@@ -1,0 +1,16 @@
+/**
+ * Editor
+ */
+
+/* purgecss start ignore */
+
+/** Config */
+@import 'config/variables';
+@import 'external/bootstrap-config';
+
+.editor-styles-wrapper > * {
+    @import 'components';
+    font-family: $font-family-base;
+}
+
+/* purgecss end ignore */

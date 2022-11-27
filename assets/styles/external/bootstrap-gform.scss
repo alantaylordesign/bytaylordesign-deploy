@@ -1,0 +1,202 @@
+/**
+ * External: Bootstrap 4 Gravity Forms
+ */
+
+/* stylelint-disable selector-class-pattern */
+
+/* Fields */
+/* -------------------------------------------------------------------------- */
+.gform_fields {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Field */
+/* -------------------------------------------------------------------------- */
+.gfield {
+    // @extend .form-group;
+    margin-bottom: $form-group-margin-bottom;
+}
+
+/* prettier-ignore */
+.gfield input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+.gfield select,
+.gfield textarea,
+[name="gform_resume_email"] {
+    @extend .form-control;
+}
+
+[name='gform_resume_email'] {
+    display: inline-block;
+    min-width: 225px;
+    vertical-align: top;
+    width: auto;
+}
+
+/* Label */
+/* -------------------------------------------------------------------------- */
+.gfield_label {
+}
+
+.hidden_label .gfield_label {
+    display: none;
+}
+
+/* Complex Fields */
+/* -------------------------------------------------------------------------- */
+.ginput_complex {
+}
+
+.ginput_full,
+.ginput_left,
+.ginput_right {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .ginput_left {
+        display: inline-block;
+        padding-right: var(--grid-gutter-width-half);
+        width: 50%;
+    }
+
+    .ginput_right {
+        display: inline-block;
+        padding-left: var(--grid-gutter-width-half);
+        width: 50%;
+    }
+}
+
+/* Radio Button Fields */
+/* -------------------------------------------------------------------------- */
+.gfield_radio {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Checkbox Field */
+/* -------------------------------------------------------------------------- */
+.gfield_checkbox > .gchoice {
+    display: flex;
+}
+
+.gfield_checkbox > .gchoice > .gfield-choice-input {
+    flex: 0 0 20px;
+    margin-right: 10px;
+    margin-top: 0.3em;
+}
+
+/* Checkbox Fields */
+/* -------------------------------------------------------------------------- */
+.gfield_checkbox {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Field Required */
+/* -------------------------------------------------------------------------- */
+.gfield_required {
+    color: var(--bs-danger);
+    display: none;
+    padding-left: 1px;
+}
+
+/* Field Error */
+/* -------------------------------------------------------------------------- */
+/* prettier-ignore */
+.gfield_error input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+.gfield_error input:focus:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+.gfield_error select,
+.gfield_error select:focus,
+.gfield_error textarea,
+.gfield_error textarea:focus {
+    @extend .alert-danger;
+}
+
+/* prettier-ignore */
+.gfield_error input:focus:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+.gfield_error select:focus,
+.gfield_error textarea:focus {
+    border-color: var(--bs-danger);
+}
+
+/* Confirmation Message */
+/* -------------------------------------------------------------------------- */
+.gform_confirmation_message {
+    @extend .alert;
+    @extend .alert-info;
+}
+
+/* Error Summary */
+/* -------------------------------------------------------------------------- */
+.validation_error {
+    @extend .alert;
+    @extend .alert-danger;
+}
+
+.gform_submission_error {
+    color: var(--bs-danger);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    line-height: var(--line-height-base);
+    margin: 0;
+}
+
+/* Field Error Message */
+/* -------------------------------------------------------------------------- */
+.validation_message {
+    @extend .alert;
+    @extend .alert-info;
+    margin-bottom: 0;
+    margin-top: var(--rem16);
+}
+
+/* Buttons */
+/* -------------------------------------------------------------------------- */
+.gform_previous_button,
+.gform_next_button,
+.gform_button,
+[name='gform_send_resume_link_button'] {
+    @extend .btn;
+    @extend .btn-danger;
+    color: #fff;
+}
+
+.gform_previous_button:hover,
+.gform_next_button:hover,
+.gform_button:hover,
+[name='gform_send_resume_link_button']:hover {
+    background: var(--bs-danger-darker);
+    color: #fff;
+}
+
+.gform_save_link {
+    @extend .btn;
+    @extend .btn-secondary;
+    -webkit-appearance: none;
+    appearance: none;
+    color: #fff;
+}
+
+.gform_save_link:hover {
+    background: var(--bs-dark);
+    color: #fff;
+}
+
+/* Loading Spinner */
+/* -------------------------------------------------------------------------- */
+.gform_ajax_spinner {
+    background: #fff;
+    border-radius: var(--rem30);
+    margin: var(--rem10);
+    padding: var(--rem4);
+}
+
+@media (max-width: 575px) {
+    .gform_ajax_spinner {
+        clear: both;
+        display: block;
+        margin: 0 0 0 auto;
+    }
+}

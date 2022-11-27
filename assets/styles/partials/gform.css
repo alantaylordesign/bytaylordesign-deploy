@@ -1,0 +1,238 @@
+/**
+ * Gravity Forms
+ */
+
+/* stylelint-disable selector-class-pattern */
+
+/* Form */
+/* -------------------------------------------------------------------------- */
+.gform_wrapper form {
+    margin-bottom: 0;
+}
+
+/* Progress Bar */
+/* -------------------------------------------------------------------------- */
+.gf_progressbar {
+    background: var(--bs-light);
+    border-radius: 0;
+    margin-bottom: var(--rem30);
+}
+
+.gf_progressbar_percentage {
+    background: #215975;
+    border-radius: 0;
+    color: var(--bs-lighter);
+    min-width: 40px;
+    padding: 10px;
+}
+
+.percentbar_100 {
+    border-radius: 0;
+}
+
+/* Description */
+/* -------------------------------------------------------------------------- */
+.gform_description {
+    display: block;
+    margin-bottom: var(--rem30);
+}
+
+/* Footer */
+/* -------------------------------------------------------------------------- */
+.gform_footer {
+    text-align: right;
+}
+
+/* Fields */
+/* -------------------------------------------------------------------------- */
+.gform_fields {
+}
+
+/* Field */
+/* -------------------------------------------------------------------------- */
+.gfield {
+}
+
+.gfield select:not([multiple]) {
+    appearance: none;
+    background-image: var(--select-background-img);
+    background-position: right var(--rem4) top 50%;
+    background-repeat: no-repeat;
+}
+
+/* Label */
+/* -------------------------------------------------------------------------- */
+.gfield_label {
+    color: #215975;
+    font-size: var(--rem24);
+}
+
+/* Description */
+/* -------------------------------------------------------------------------- */
+.gfield_description {
+    margin-bottom: var(--rem20);
+}
+
+/* Complex Fields */
+/* -------------------------------------------------------------------------- */
+.ginput_complex {
+}
+
+.ginput_complex > span {
+}
+
+.ginput_complex > span > label {
+}
+
+.ginput_full,
+.ginput_left,
+.ginput_right {
+}
+
+/* Radio Button Fields */
+/* -------------------------------------------------------------------------- */
+.gfield_radio {
+}
+
+.gfield_radio > li {
+}
+
+.gfield_radio > li > label {
+    margin-left: var(--rem4);
+    position: relative;
+    top: var(--rem2);
+}
+
+/* Checkbox Fields */
+/* -------------------------------------------------------------------------- */
+.gfield_checkbox {
+}
+
+.gfield_checkbox > li {
+}
+
+.gfield_checkbox > li > label {
+}
+
+/* Field Required */
+/* -------------------------------------------------------------------------- */
+.gfield_required {
+    /* color: #fdd; */
+}
+
+/* Field Error */
+/* -------------------------------------------------------------------------- */
+.gfield_error {
+}
+
+.gfield_error .gfield_label {
+}
+
+/* prettier-ignore */
+.gfield_error input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+.gfield_error input:focus:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+.gfield_error select,
+.gfield_error select:focus,
+.gfield_error textarea,
+.gfield_error textarea:focus {
+    font-weight: 700;
+}
+
+/* Confirmation Message */
+/* -------------------------------------------------------------------------- */
+.gform_confirmation_message {
+}
+
+/* Error Summary */
+/* -------------------------------------------------------------------------- */
+.validation_error {
+}
+
+/* Field Error Message */
+/* -------------------------------------------------------------------------- */
+.validation_message {
+}
+
+/* Buttons */
+/* -------------------------------------------------------------------------- */
+.gform_page_footer {
+    text-align: right;
+}
+
+.gform_page_footer::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.gform_previous_button,
+.gform_next_button,
+.gform_save_link,
+.gform_button {
+    border: 0;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+[name='gform_send_resume_link_button'] {
+    border: 0;
+    font-weight: 700;
+}
+
+.gform_previous_button:hover,
+.gform_next_button:hover,
+.gform_button:hover {
+}
+
+.gform_previous_button {
+    float: left;
+}
+
+.gform_next_button,
+.gform_save_link,
+.gform_button {
+    float: right;
+    margin-left: var(--rem20);
+}
+
+@media (max-width: 575px) {
+    .gform_next_button,
+    .gform_save_link,
+    .gform_button {
+        margin-left: 0;
+    }
+
+    .gform_button:first-child {
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .gform_previous_button,
+    .gform_next_button,
+    .gform_save_link,
+    .gform_previous_button + .gform_button {
+        display: inline-block;
+        margin-top: 2rem;
+        width: 48%;
+    }
+
+    .gform_previous_button {
+        float: left;
+    }
+
+    .gform_next_button {
+        float: right;
+    }
+
+    .gform_previous_button + .gform_button {
+        float: right;
+    }
+
+    .gform_save_link {
+        clear: both;
+        display: block;
+        margin-top: var(--rem20);
+        width: 100%;
+    }
+}

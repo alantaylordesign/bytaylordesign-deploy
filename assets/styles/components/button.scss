@@ -1,0 +1,27 @@
+/**
+ * Button
+ */
+
+.wp-block-button {
+    &__link {
+        font-size: $btn-font-size;
+        line-height: $btn-line-height;
+        padding: $btn-padding-y $btn-padding-x;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &.is-style-outline {
+        .wp-block-button__link {
+            @include button-outline-variant($primary, $light);
+        }
+    }
+
+    &.is-style-solid {
+        .wp-block-button__link {
+            @include button-variant($primary, $light);
+        }
+    }
+}

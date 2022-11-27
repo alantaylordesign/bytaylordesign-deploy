@@ -1,0 +1,101 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * komet:
+ *   - http://typekit.com/eulas/00000000000000007735a904
+ *   - http://typekit.com/eulas/00000000000000007735a908
+ *   - http://typekit.com/eulas/00000000000000007735a90c
+ *   - http://typekit.com/eulas/00000000000000007735a911
+ *   - http://typekit.com/eulas/00000000000000007735a914
+ *   - http://typekit.com/eulas/00000000000000007735a916
+ *
+ * © 2009-2021 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-06-16 18:16:40 UTC"}*/
+
+@import url('https://p.typekit.net/p.css?s=1&k=mpu3mlb&ht=tk&f=36495.36496.36497.36498.36499.36500&a=1110924&app=typekit&e=css');
+
+@font-face {
+    font-display: swap;
+    font-family: 'komet';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://use.typekit.net/af/66c5aa/00000000000000007735a904/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+            format('woff2'),
+        url('https://use.typekit.net/af/66c5aa/00000000000000007735a904/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+            format('woff'),
+        url('https://use.typekit.net/af/66c5aa/00000000000000007735a904/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+            format('opentype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'komet';
+    font-style: italic;
+    font-weight: 400;
+    src: url('https://use.typekit.net/af/664267/00000000000000007735a908/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+            format('woff2'),
+        url('https://use.typekit.net/af/664267/00000000000000007735a908/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+            format('woff'),
+        url('https://use.typekit.net/af/664267/00000000000000007735a908/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+            format('opentype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'komet';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://use.typekit.net/af/b801ba/00000000000000007735a90c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+            format('woff2'),
+        url('https://use.typekit.net/af/b801ba/00000000000000007735a90c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+            format('woff'),
+        url('https://use.typekit.net/af/b801ba/00000000000000007735a90c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+            format('opentype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'komet';
+    font-style: italic;
+    font-weight: 500;
+    src: url('https://use.typekit.net/af/d5f987/00000000000000007735a911/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3')
+            format('woff2'),
+        url('https://use.typekit.net/af/d5f987/00000000000000007735a911/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3')
+            format('woff'),
+        url('https://use.typekit.net/af/d5f987/00000000000000007735a911/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3')
+            format('opentype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'komet';
+    font-style: italic;
+    font-weight: 700;
+    src: url('https://use.typekit.net/af/bce7fd/00000000000000007735a914/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+            format('woff2'),
+        url('https://use.typekit.net/af/bce7fd/00000000000000007735a914/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+            format('woff'),
+        url('https://use.typekit.net/af/bce7fd/00000000000000007735a914/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3')
+            format('opentype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'komet';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://use.typekit.net/af/8bf67f/00000000000000007735a916/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+            format('woff2'),
+        url('https://use.typekit.net/af/8bf67f/00000000000000007735a916/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+            format('woff'),
+        url('https://use.typekit.net/af/8bf67f/00000000000000007735a916/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+            format('opentype');
+}
+
+.tk-komet {
+    font-family: 'komet', sans-serif;
+}

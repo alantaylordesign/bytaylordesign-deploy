@@ -1,0 +1,19 @@
+/**
+ * External: Bootstrap 4
+ */
+
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/transitions';
+// @import '~bootstrap/scss/dropdown';
+// @import '~bootstrap/scss/button-group';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+
+.nav,
+.navbar-nav {
+    --bs-nav-link-color: #000;
+}
+
+#navbar-nav--banner .nav-link {
+    color: #000 !important;
+}

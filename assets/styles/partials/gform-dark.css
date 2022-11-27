@@ -1,0 +1,60 @@
+/**
+ * Gravity Forms
+ */
+
+/* stylelint-disable selector-class-pattern */
+
+/* Field */
+/* -------------------------------------------------------------------------- */
+/* prettier-ignore */
+.gform--dark .gfield input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+.gform--dark .gfield select,
+.gform--dark .gfield textarea {
+    background-color: #457d99;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--bs-lighter);
+}
+
+/* prettier-ignore */
+.gform--dark .gfield input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']):focus,
+.gform--dark .gfield select:focus,
+.gform--dark .gfield textarea:focus {
+    border-color: var(--bs-info);
+}
+
+/* Label */
+/* -------------------------------------------------------------------------- */
+.gform--dark .gfield_label {
+    color: var(--bs-lighter);
+    font-size: var(--rem24);
+}
+
+/* Complex Fields */
+/* -------------------------------------------------------------------------- */
+.gform--dark .ginput_complex > span > label {
+    color: var(--bs-lighter);
+}
+
+/* Radio Button Fields */
+/* -------------------------------------------------------------------------- */
+.gform--dark .gfield_radio > li > label {
+    color: var(--bs-lighter);
+}
+
+/* Field Required */
+/* -------------------------------------------------------------------------- */
+.gform--dark .gfield_required {
+    color: #fdd;
+}
+
+/* Buttons */
+/* -------------------------------------------------------------------------- */
+/* .gform--dark .gform_button {
+    background-color: var(--bs-lighter);
+    color: var(--bs-primary);
+} */
+
+/* .gform--dark .gform_button:hover {
+    background: var(--bs-info);
+    color: var(--bs-lighter);
+} */

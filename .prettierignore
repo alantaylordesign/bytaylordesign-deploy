@@ -1,0 +1,11 @@
+**/.git/**
+**/.svn/**
+**/dist/**
+**/node_modules/**
+**/storage/**
+**/var/**
+**/vendor/**
+package-lock.json
+README.md
+CHANGELOG.md
+static.html

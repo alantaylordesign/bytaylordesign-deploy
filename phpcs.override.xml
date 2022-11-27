@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="TaylorDesignWordPressThemePHPCSOverrides"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <description>The Taylor Design WordPress Theme PHPCS Overrides.</description>
+
+    <!-- PHP version to make sure code is compatible with -->
+    <config name="testVersion" value="8.0"/>
+
+    <!-- WordPress version to make sure code is compatible with -->
+    <config name="minimum_supported_wp_version" value="5.6" />
+</ruleset>

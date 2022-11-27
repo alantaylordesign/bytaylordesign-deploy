@@ -1,0 +1,40 @@
+{
+    "extends": "@wordpress/npm-package-json-lint-config",
+    "rules": {
+        "prefer-property-order": [
+            "error",
+            [
+                "name",
+                "version",
+                "description",
+                "author",
+                "license",
+                "private",
+                "keywords",
+                "homepage",
+                "repository",
+                "bugs",
+                "engines",
+                "directories",
+                "files",
+                "main",
+                "module",
+                "bin",
+                "publishConfig",
+                "config",
+                "scripts",
+                "dependencies",
+                "devDependencies",
+                "peerDependencies"
+            ]
+        ],
+        "require-author": "off",
+        "require-bugs": "off",
+        "require-homepage": "off",
+        "require-keywords": "off",
+        "require-repository": "off",
+        "require-config": "error",
+        "require-dependencies": "error",
+        "valid-values-license": ["error", ["UNLICENSED"]]
+    }
+}

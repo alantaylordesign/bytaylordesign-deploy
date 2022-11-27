@@ -1,0 +1,11 @@
+/node_modules
+/vendor
+/dist
+npm-debug.log
+yarn-error.log
+
+# Cache
+.eslintcache
+.phpcs-cache
+.php_cs.cache
+.php-cs-fixer.cache

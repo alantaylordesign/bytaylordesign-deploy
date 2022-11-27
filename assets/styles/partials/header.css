@@ -1,0 +1,125 @@
+/**
+ * Header
+ */
+
+/* Banner */
+/* -------------------------------------------------------------------------- */
+.banner {
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 2; */
+}
+
+/* Branding */
+/* -------------------------------------------------------------------------- */
+.branding {
+    font-weight: 700;
+}
+
+/* Banner Navbar */
+/* -------------------------------------------------------------------------- */
+.navbar--banner {
+    background: var(--bs-lighter);
+    border-bottom: 2px solid #000;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+html[data-stickyheader] .navbar--banner {
+    transition: 0.15s all ease;
+}
+
+@media (min-width: 992px) {
+    html:not([data-stickyheader='true']) .navbar--banner {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+/* Banner Navbar Brand */
+/* -------------------------------------------------------------------------- */
+.navbar-brand--banner {
+    color: #000;
+}
+
+.navbar-brand--banner .navbar-brand__img,
+.navbar-brand--banner .navbar-brand__img-wrapper > svg {
+    height: auto;
+    max-width: var(--rem180);
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .navbar-brand--banner .navbar-brand__img,
+    .navbar-brand--banner .navbar-brand__img-wrapper > svg {
+        max-width: var(--rem180);
+    }
+}
+
+/* Banner Navbar Collapse */
+/* -------------------------------------------------------------------------- */
+.navbar-collapse--banner {
+    justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse--banner {
+        margin-top: var(--rem10);
+    }
+}
+
+/* Banner Navbar Nav */
+/* -------------------------------------------------------------------------- */
+.navbar-nav--banner {
+    --link-color: var(--bs-lighter);
+    --link-hover-color: var(--bs-light);
+}
+
+.navbar-nav--banner .nav-link:active,
+.navbar-nav--banner .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav--banner .nav-link {
+    /* padding: 0.5rem 2.5rem 0.1rem 1rem; */
+}
+
+@media (max-width: 767px) {
+    .navbar-nav--banner .nav-link {
+        font-size: var(--rem24);
+        margin-left: -1em;
+        margin-right: -1em;
+        padding: 1rem 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav--banner .nav-link {
+        border-radius: var(--rem4);
+        text-align: center;
+    }
+
+    .navbar-nav--banner .nav-link:hover {
+        background: #ebebeb;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav--banner {
+        text-align: right;
+    }
+}
+
+/* Banner Navbar Toggle */
+/* -------------------------------------------------------------------------- */
+.navbar-toggler--banner.navbar-toggler--banner {
+    /* color: #000; */
+    /* font-size: var(--rem30); */
+}
+
+.navbar-toggler--banner:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

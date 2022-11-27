@@ -1,0 +1,73 @@
+/**
+ * Survey Form
+ */
+
+/* stylelint-disable selector-class-pattern */
+
+/* Radio Button Icons */
+/* -------------------------------------------------------------------------- */
+.radio-button-icons {
+}
+
+.radio-button-icons li {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.radio-button-icons input {
+    display: none;
+}
+
+.radio-button-icons__text {
+    display: block;
+}
+
+.radio-button-icons__icon {
+    color: var(--bs-secondary);
+    display: block;
+    font-size: var(--rem60);
+}
+
+.radio-button-icons__icon:hover {
+    color: var(--body-color);
+    cursor: pointer;
+}
+
+.radio-button-icons input:checked + label .radio-button-icons__icon {
+    color: var(--bs-danger);
+}
+
+/* Radio Button Number Scale */
+/* -------------------------------------------------------------------------- */
+.radio-button-number-scale {
+}
+
+.radio-button-number-scale li {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.radio-button-number-scale input {
+    display: none;
+}
+
+.radio-button-number-scale li label {
+    background: var(--bs-secondary);
+    color: var(--bs-lighter);
+    display: block;
+    font-size: var(--rem20);
+    height: var(--rem40);
+    line-height: var(--rem40);
+    width: var(--rem40);
+}
+
+.radio-button-number-scale li label:hover {
+    background: var(--body-color);
+    cursor: pointer;
+}
+
+.radio-button-number-scale li input:checked + label {
+    background: var(--bs-danger);
+}

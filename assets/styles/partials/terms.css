@@ -1,0 +1,29 @@
+.terms {
+    --link-color: var(--bs-lighter);
+    --link-hover-color: var(--bs-info);
+    --link-decoration: underline;
+    align-items: center;
+    color: var(--bs-lighter);
+    display: flex;
+    font-size: 0.8em;
+    margin-bottom: 1rem;
+    max-width: var(--rem640);
+    text-align: left;
+}
+
+.terms__icon-wrapper {
+    min-width: var(--rem40);
+    padding-right: var(--grid-gutter-width-half);
+}
+
+.terms__icon {
+    font-size: 2em;
+}
+
+.terms__body {
+    --paragraph-margin-bottom: 0;
+}
+
+.terms--privacy {
+    max-width: var(--rem570);
+}

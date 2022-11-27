@@ -1,0 +1,115 @@
+/**
+ * Reboot
+ */
+
+/* purgecss start ignore */
+html {
+    /* n * 1.125 */
+    font-size: 87.5%;
+
+    /* scroll-padding-top: var(--html-scroll-padding-top); */
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-base);
+}
+
+h1,
+.h1 {
+    margin-bottom: var(--h1-margin-bottom);
+    margin-top: var(--h1-margin-top);
+}
+
+h2,
+.h2 {
+    margin-bottom: var(--h2-margin-bottom);
+    margin-top: var(--h2-margin-top);
+}
+
+h3,
+.h3 {
+    margin-bottom: var(--h3-margin-bottom);
+    margin-top: var(--h3-margin-top);
+}
+
+h4,
+.h4 {
+    margin-bottom: var(--h4-margin-bottom);
+    margin-top: var(--h4-margin-top);
+}
+
+h5,
+.h5 {
+    margin-bottom: var(--h5-margin-bottom);
+    margin-top: var(--h5-margin-top);
+}
+
+h6,
+.h6 {
+    margin-bottom: var(--h6-margin-bottom);
+    margin-top: var(--h6-margin-top);
+}
+
+p {
+    margin-bottom: var(--paragraph-margin-bottom);
+    margin-top: var(--paragraph-margin-top);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: var(--link-decoration);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: var(--link-hover-decoration);
+}
+
+embed,
+iframe,
+img,
+object,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+.gform_validation_container,
+.gform_wrapper .gform_validation_container,
+body .gform_wrapper li.gform_validation_container,
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
+body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
+    display: none !important;
+    left: -9000px;
+    position: absolute !important;
+}
+/* stylelint-enable selector-no-qualifying-type */
+
+.break-xs {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 100%;
+    }
+
+    .break-xs {
+        display: inline;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+/* purgecss stop ignore */

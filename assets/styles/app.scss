@@ -1,0 +1,59 @@
+/**
+ * App
+ */
+
+/** Config */
+@import 'config/variables';
+@import 'external/bootstrap-config';
+
+/** Root */
+// @import 'external/bootstrap-root';
+// @import 'common/root';
+
+/** Reboot */
+// @import 'external/bootstrap-reboot';
+// @import 'common/reboot';
+
+/** Type */
+// @import 'external/bootstrap-type';
+// @import 'common/type';
+
+/** Grid */
+// @import 'external/bootstrap-grid';
+// @import 'common/grid';
+
+/* Bootstrap Widgets */
+@import 'external/bootstrap';
+
+/* Animate.css */
+@import 'external/animate';
+@import 'common/animate';
+
+/* Gravity Forms */
+@import 'external/bootstrap-gform';
+@import 'common/gform';
+
+/** Common */
+// @import 'common/loaded';
+
+/** Components */
+// @import 'components';
+
+/** Partials */
+@import 'partials/hero-lazy';
+@import 'partials/projects';
+@import 'partials/process';
+@import 'partials/about';
+@import 'partials/contact';
+@import 'partials/footer';
+// @import 'partials/modal';
+@import 'partials/terms';
+@import 'partials/gform';
+@import 'partials/gform-dark';
+@import 'partials/contact-form';
+@import 'partials/project-scope-form';
+@import 'partials/survey-form';
+
+.lazy-css-bg {
+    background-image: none !important;
+}

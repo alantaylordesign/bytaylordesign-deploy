@@ -1,0 +1,78 @@
+/**
+ * Type
+ */
+
+/* purgecss start ignore */
+h1,
+.h1 {
+    color: var(--h1-color);
+    font-family: var(--h1-font-family);
+    font-size: var(--h1-font-size);
+    font-weight: var(--h1-font-weight);
+    letter-spacing: var(--h1-letter-spacing);
+    line-height: var(--h1-line-height);
+    margin-bottom: var(--h1-margin-bottom);
+    margin-top: var(--h1-margin-top);
+}
+
+h2,
+.h2 {
+    color: var(--h2-color);
+    font-family: var(--h2-font-family);
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    letter-spacing: var(--h2-letter-spacing);
+    line-height: var(--h2-line-height);
+    margin-bottom: var(--h2-margin-bottom);
+    margin-top: var(--h2-margin-top);
+}
+
+h3,
+.h3 {
+    color: var(--h3-color);
+    font-family: var(--h3-font-family);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    margin-bottom: var(--h3-margin-bottom);
+    margin-top: var(--h3-margin-top);
+}
+
+h4,
+.h4 {
+    color: var(--h4-color);
+    font-family: var(--h4-font-family);
+    font-size: var(--h4-font-size);
+    font-weight: var(--h4-font-weight);
+    letter-spacing: var(--h4-letter-spacing);
+    line-height: var(--h4-line-height);
+    margin-bottom: var(--h4-margin-bottom);
+    margin-top: var(--h4-margin-top);
+}
+
+h5,
+.h5 {
+    color: var(--h5-color);
+    font-family: var(--h5-font-family);
+    font-size: var(--h5-font-size);
+    font-weight: var(--h5-font-weight);
+    letter-spacing: var(--h5-letter-spacing);
+    line-height: var(--h5-line-height);
+    margin-bottom: var(--h5-margin-bottom);
+    margin-top: var(--h5-margin-top);
+}
+
+h6,
+.h6 {
+    color: var(--h6-color);
+    font-family: var(--h6-font-family);
+    font-size: var(--h6-font-size);
+    font-weight: var(--h6-font-weight);
+    letter-spacing: var(--h6-letter-spacing);
+    line-height: var(--h6-line-height);
+    margin-bottom: var(--h6-margin-bottom);
+    margin-top: var(--h6-margin-top);
+}
+
+/* purgecss stop ignore */

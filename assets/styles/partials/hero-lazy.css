@@ -1,0 +1,21 @@
+/**
+ * Hero Lazy
+ */
+
+/* Subpage Hero */
+/* -------------------------------------------------------------------------- */
+.subpage-hero {
+    background-image: url('../images/process-wrapper-bg.jpg.webp');
+}
+
+.no-webp .project-wrapper {
+    background-image: url('../images/process-wrapper-bg.jpg');
+}
+
+.subpage-hero__inner {
+    background-image: url('../images/project-blob-2.svg');
+}
+
+.page-template-projects .subpage-hero__inner {
+    background-image: url('../images/project-blob.svg');
+}

@@ -1,0 +1,136 @@
+/**
+ * Root
+ */
+
+@use "sass:math";
+
+/* purgecss start ignore */
+:root {
+    // --html-scroll-padding-top: var(--rem52);
+
+    // Grid
+    --grid-columns: #{$grid-columns};
+    --grid-gutter-width: #{$grid-gutter-width};
+    --grid-gutter-width-half: #{math.div($grid-gutter-width, 2)};
+    --grid-gutter-width-double: #{$grid-gutter-width * 2};
+    --grid-gutter-width-triple: #{$grid-gutter-width * 3};
+    --grid-row-columns: #{$grid-row-columns};
+
+    // Base
+    --font-size-base: #{$font-size-base};
+    --font-family-base: #{$font-family-base};
+    --font-weight-base: #{$font-weight-base};
+    --line-height-base: #{$line-height-base};
+    --body-color: #{$body-color};
+    --body-bg: #{$body-bg};
+
+    // Paragrah Margins
+    --paragraph-margin-bottom: #{$paragraph-margin-bottom};
+    --paragraph-margin-top: 0;
+
+    // Links
+    --link-color: #{$link-color};
+    --link-decoration: #{$link-decoration};
+    --link-hover-color: #{$link-hover-color};
+    --link-hover-decoration: #{$link-hover-decoration};
+
+    // Forms
+    --select-background-img: url('../images/select.svg');
+
+    // Heading Font Size
+    --h1-font-size: #{$h1-font-size-xs};
+    --h2-font-size: #{$h2-font-size-xs};
+    --h3-font-size: #{$h3-font-size};
+    --h4-font-size: #{$h4-font-size};
+    --h5-font-size: #{$h5-font-size};
+    --h6-font-size: #{$h6-font-size};
+
+    // Heading Margin Top
+    --h1-margin-bottom: 0;
+    --h2-margin-bottom: 0;
+    --h3-margin-bottom: 0;
+    --h4-margin-bottom: 0;
+    --h5-margin-bottom: 0;
+    --h6-margin-bottom: 0;
+
+    // Heading Margin Bottom
+    --h1-margin-bottom: #{$headings-margin-bottom};
+    --h2-margin-bottom: var(--grid-gutter-width-double);
+    --h3-margin-bottom: #{$headings-margin-bottom};
+    --h4-margin-bottom: #{$headings-margin-bottom};
+    --h5-margin-bottom: #{$headings-margin-bottom};
+    --h6-margin-bottom: #{$headings-margin-bottom};
+
+    // Heading Font Size
+    --h1-font-family: #{$headings-font-family};
+    --h2-font-family: #{$headings-font-family};
+    --h3-font-family: #{$headings-font-family};
+    --h4-font-family: #{$headings-font-family};
+    --h5-font-family: #{$headings-font-family};
+    --h6-font-family: #{$headings-font-family};
+
+    // Heading Font Weight
+    --h1-font-weight: #{$headings-font-weight};
+    --h2-font-weight: 700;
+    --h3-font-weight: 700;
+    --h4-font-weight: #{$headings-font-weight};
+    --h5-font-weight: #{$headings-font-weight};
+    --h6-font-weight: #{$headings-font-weight};
+
+    // Heading Line Height
+    --h1-line-height: #{$headings-line-height};
+    --h2-line-height: #{$headings-line-height};
+    --h3-line-height: #{$headings-line-height};
+    --h4-line-height: #{$headings-line-height};
+    --h5-line-height: #{$headings-line-height};
+    --h6-line-height: #{$headings-line-height};
+
+    // Heading Letter Spacing
+    --h1-letter-spacing: #{$headings-letter-spacing};
+    --h2-letter-spacing: #{$headings-letter-spacing};
+    --h3-letter-spacing: #{$headings-letter-spacing};
+    --h4-letter-spacing: #{$headings-letter-spacing};
+    --h5-letter-spacing: #{$headings-letter-spacing};
+    --h6-letter-spacing: #{$headings-letter-spacing};
+
+    // Heading Color
+    --h1-color: var(--#{$variable-prefix}lighter);
+    --h2-color: var(--#{$variable-prefix}primary);
+    --h3-color: #{$headings-color};
+    --h4-color: #{$headings-color};
+    --h5-color: #{$headings-color};
+    --h6-color: #{$headings-color};
+
+    @for $i from 1 through 1000 {
+        // --rem#{$i}: calc(#{$i} / 16 * 1rem);
+        --rem#{$i}: #{math.div($i, 16) * 1rem};
+    }
+}
+
+@media (min-width: 375px) {
+    :root {
+        --h1-font-size: #{$h1-font-size-tiny};
+    }
+}
+
+@media (min-width: 576px) {
+    :root {
+        // --html-scroll-padding-top: var(--rem58);
+        --h2-font-size: #{$h2-font-size};
+        --h2-margin-bottom: calc(var(--grid-gutter-width) * 1.8);
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --h1-font-size: #{$h1-font-size-md};
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --h1-font-size: #{$h1-font-size};
+    }
+}
+
+/* purgecss stop ignore */

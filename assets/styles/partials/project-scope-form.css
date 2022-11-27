@@ -1,0 +1,79 @@
+/**
+ * Project Scope Form
+ */
+
+/* stylelint-disable selector-class-pattern */
+
+/* Project Scope Form */
+/* -------------------------------------------------------------------------- */
+.project-scope-form {
+    --select-background-img: url('../images/select-light.svg');
+}
+
+.project-scope-form__field {
+}
+
+.project-scope-form__field-grp {
+}
+
+.project-scope-form__field--nonprofit .gfield_radio > li {
+    display: inline-block;
+    margin-right: var(--rem20);
+}
+
+.project-scope-form__field--interest .gfield_checkbox > .gchoice_5_15_3,
+.project-scope-form__field--interest .gfield_checkbox > .gchoice_5_15_7,
+.project-scope-form__field--interest .gfield_checkbox > .gchoice_5_15_13,
+.project-scope-form__field--interest .gfield_checkbox > .gchoice_5_15_16,
+.project-scope-form__field--interest .gfield_checkbox > .gchoice_5_15_22 {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .project-scope-form__field--terms {
+        float: left;
+    }
+
+    .project-scope-form__field--interest .gfield_checkbox {
+        columns: 2;
+    }
+
+    .project-scope-form__field--first-name {
+        display: inline-block;
+        padding-right: var(--grid-gutter-width-half);
+        width: 50%;
+    }
+
+    .project-scope-form__field--last-name {
+        display: inline-block;
+        padding-left: var(--grid-gutter-width-half);
+        width: 50%;
+    }
+
+    .project-scope-form__field-grp--address .address_city {
+        padding-left: 0;
+        padding-right: var(--grid-gutter-width-half);
+        width: 33%;
+    }
+
+    .project-scope-form__field-grp--address .address_state {
+        padding-left: var(--grid-gutter-width-half);
+        padding-right: var(--grid-gutter-width-half);
+        width: 34%;
+    }
+
+    .project-scope-form__field-grp--address .address_zip {
+        padding-left: var(--grid-gutter-width-half);
+        padding-right: 0;
+        width: 33%;
+    }
+}
+
+@media (min-width: 1200px) {
+}

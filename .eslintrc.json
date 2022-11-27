@@ -1,0 +1,98 @@
+{
+    "root": true,
+    "extends": ["./.es6.eslintrc.json", "plugin:prettier/recommended"],
+    "overrides": [
+        // {
+        //     "files": ["*.ts", "*.tsx"],
+        //     "extends": ["./.ts.eslintrc.json", "plugin:prettier/recommended"]
+        // },
+        {
+            "files": ["*.es5.js", "*.umd.js"],
+            "extends": ["./.es5.eslintrc.json", "plugin:prettier/recommended"]
+        },
+        {
+            "files": ["jquery.*.js", "builder.js"],
+            "extends": ["./.es5.eslintrc.json", "plugin:prettier/recommended"],
+            "env": {
+                "jquery": true
+            }
+        },
+        {
+            "files": ["service-worker.js"],
+            "parserOptions": {
+                "sourceType": "script"
+            }
+        },
+        {
+            "files": [
+                "karma-test-shim.js",
+                "karma.conf.js",
+                "postcss.config.js",
+                "protractor.conf.js",
+                "webpack.config.js",
+                "webpack.mix.js",
+                "webpack.test.js"
+            ],
+            "extends": ["./.node.eslintrc.json", "plugin:prettier/recommended"],
+            "rules": {
+                "global-require": "off",
+                "max-lines": "off",
+                "no-process-env": "off",
+                "prefer-named-capture-group": "off",
+                "require-unicode-regexp": "off",
+                "import/no-extraneous-dependencies": "off",
+                "import/unambiguous": "off"
+            }
+        },
+        {
+            "files": ["webpack.mix.js"],
+            "rules": {
+                "import/no-unassigned-import": "off"
+            }
+        },
+        {
+            "files": ["*.po.js", "*.po.ts", "protractor.conf.js"],
+            "env": {
+                "jasmine": true,
+                "protractor": true
+            }
+        },
+        {
+            "files": ["*.spec.js", "*.spec.ts", "*-spec.js", "*-spec.ts"],
+            "env": {
+                "jasmine": true
+            },
+            "rules": {
+                "max-lines-per-function": "off",
+                "no-unused-vars": "off",
+                "import/no-unassigned-import": "off"
+            }
+        },
+        {
+            "files": ["*.spec.ts", "*-spec.ts"],
+            "rules": {
+                "@typescript-eslint/no-unused-vars": "off"
+            }
+        },
+        {
+            "files": ["customize.js", "customize-*.js", "customizer.js"],
+            "env": {
+                "jquery": true
+            },
+            "globals": {
+                "wp": "readonly"
+            },
+            "rules": {
+                "func-names": "off",
+                "import/unambiguous": "off"
+            }
+        },
+        {
+            "files": ["editor.js"],
+            "rules": {
+                "import/no-unassigned-import": "off",
+                "import/no-unresolved": "off"
+            }
+        }
+    ]
+}

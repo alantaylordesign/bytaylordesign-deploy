@@ -1,0 +1,65 @@
+/**
+ * Animated
+ */
+
+/* stylelint-disable selector-no-qualifying-type */
+
+span.animated {
+    display: inline-block;
+}
+
+.animated--in-viewport:not([data-in-viewport='true']) {
+    animation: none;
+}
+
+/**
+ * Fade in and out on scroll.
+ */
+.animated--in-viewport.fadeInAndOutOnScroll {
+    transition: opacity ease 1s;
+}
+
+.animated--in-viewport.fadeInAndOutOnScroll[data-in-viewport='false'] {
+    opacity: 0;
+}
+
+.animated--in-viewport.fadeInAndOutOnScroll[data-in-viewport='true'] {
+    opacity: 1;
+}
+
+/**
+ * Wipe Animation
+ */
+
+@media (min-width: 375px) {
+    .animate-wipe {
+        animation: linearwipe 2s;
+        display: inline-block;
+        overflow: hidden;
+        padding-right: 4px;
+        text-align: left;
+        white-space: nowrap;
+        width: 100%;
+    }
+}
+
+@keyframes linearwipe {
+    0% {
+        border-right: 2px solid #fff;
+        padding-right: 2px;
+        width: 0;
+    }
+
+    99% {
+        border-right: 2px solid #fff;
+        padding-right: 2px;
+    }
+
+    100% {
+        /* border-right: 0; */
+        /* padding-right: 0; */
+    }
+}
+
+.animate-wipe__inner {
+}

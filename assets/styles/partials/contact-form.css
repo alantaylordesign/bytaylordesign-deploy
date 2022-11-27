@@ -1,0 +1,45 @@
+/**
+ * Contact Form
+ */
+
+/* stylelint-disable selector-class-pattern */
+
+/* Contact Form */
+/* -------------------------------------------------------------------------- */
+.contact-form {
+    --select-background-img: url('../images/select-light.svg');
+}
+
+.contact-form__field {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .contact-form__field--terms {
+        float: left;
+    }
+
+    .contact-form__field--first-name {
+        float: left;
+        padding-right: var(--grid-gutter-width-half);
+        width: 50%;
+    }
+
+    .contact-form__field--last-name {
+        float: left;
+        padding-left: var(--grid-gutter-width-half);
+        width: 50%;
+    }
+
+    .contact-form__field--last-name + * {
+        clear: both;
+    }
+}
+
+@media (min-width: 1200px) {
+}
