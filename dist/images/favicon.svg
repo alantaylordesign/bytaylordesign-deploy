@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Asset 1</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-1" fill-rule="nonzero">
+            <rect id="Rectangle" fill="#FED771" x="0" y="0" width="16" height="16"></rect>
+            <rect id="Rectangle" fill="#FF595A" x="0" y="0" width="7" height="14"></rect>
+            <rect id="Rectangle" fill="#65CBC9" x="9" y="2" width="7" height="14"></rect>
+            <rect id="Rectangle" fill="#000000" x="2" y="2" width="12" height="12"></rect>
+            <path d="M8.51,4 L8.51,5.59 L10.26,5.59 L10.26,6.76 L8.51,6.76 L8.51,9.48 C8.51,10.24 8.75,10.62 9.45,10.62 C9.6915671,10.6303026 9.93347012,10.610144 10.17,10.56 L10.17,11.74 C9.73663289,11.8568349 9.28871207,11.9107201 8.84,11.9 C8.27009072,11.9307279 7.70847586,11.7530017 7.26,11.4 C6.82491203,10.9307077 6.61350503,10.2964867 6.68,9.66 L6.68,6.76 L5.68,6.76 L5.68,5.59 L6.68,5.59 L6.68,4.44 L8.51,4 Z" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
