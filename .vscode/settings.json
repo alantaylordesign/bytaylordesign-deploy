@@ -41,8 +41,8 @@
     },
     "css.lint.emptyRules": "ignore",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.fixAll.stylelint": true
+        "source.fixAll.eslint": false,
+        "source.fixAll.stylelint": false
     },
     "javascript.validate.enable": false,
     "php-cs-fixer.exclude": [
